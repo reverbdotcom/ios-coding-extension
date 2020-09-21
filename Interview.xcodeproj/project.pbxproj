@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0AE438B225193ADB00EFC694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE438B125193ADB00EFC694 /* AppDelegate.swift */; };
-		0AE438B425193ADB00EFC694 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE438B325193ADB00EFC694 /* SceneDelegate.swift */; };
-		0AE438B625193ADB00EFC694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE438B525193ADB00EFC694 /* ViewController.swift */; };
 		0AE438B925193ADB00EFC694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE438B725193ADB00EFC694 /* Main.storyboard */; };
 		0AE438BB25193ADC00EFC694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE438BA25193ADC00EFC694 /* Assets.xcassets */; };
 		0AE438BE25193ADC00EFC694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE438BC25193ADC00EFC694 /* LaunchScreen.storyboard */; };
 		0AE438C925193ADC00EFC694 /* InterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE438C825193ADC00EFC694 /* InterviewTests.swift */; };
 		0AE438D425193ADC00EFC694 /* InterviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE438D325193ADC00EFC694 /* InterviewUITests.swift */; };
+		0AE438ED25193B4000EFC694 /* ListingIndexDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE438EB25193B4000EFC694 /* ListingIndexDataSource.swift */; };
+		0AE438EE25193B4000EFC694 /* ListingIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE438EC25193B4000EFC694 /* ListingIndexViewController.swift */; };
+		0AE438F425193B5E00EFC694 /* reverb-gear-index.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AE438F325193B5E00EFC694 /* reverb-gear-index.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +38,6 @@
 /* Begin PBXFileReference section */
 		0AE438AE25193ADB00EFC694 /* Interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Interview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE438B125193ADB00EFC694 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0AE438B325193ADB00EFC694 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0AE438B525193ADB00EFC694 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0AE438B825193ADB00EFC694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AE438BA25193ADC00EFC694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AE438BD25193ADC00EFC694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,9 @@
 		0AE438CF25193ADC00EFC694 /* InterviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE438D325193ADC00EFC694 /* InterviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewUITests.swift; sourceTree = "<group>"; };
 		0AE438D525193ADC00EFC694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AE438EB25193B4000EFC694 /* ListingIndexDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingIndexDataSource.swift; sourceTree = "<group>"; };
+		0AE438EC25193B4000EFC694 /* ListingIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingIndexViewController.swift; sourceTree = "<group>"; };
+		0AE438F325193B5E00EFC694 /* reverb-gear-index.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "reverb-gear-index.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,9 @@
 		0AE438B025193ADB00EFC694 /* Interview */ = {
 			isa = PBXGroup;
 			children = (
+				0AE438F225193B4700EFC694 /* Data */,
+				0AE438E725193B0800EFC694 /* Index */,
 				0AE438B125193ADB00EFC694 /* AppDelegate.swift */,
-				0AE438B325193ADB00EFC694 /* SceneDelegate.swift */,
-				0AE438B525193ADB00EFC694 /* ViewController.swift */,
 				0AE438B725193ADB00EFC694 /* Main.storyboard */,
 				0AE438BA25193ADC00EFC694 /* Assets.xcassets */,
 				0AE438BC25193ADC00EFC694 /* LaunchScreen.storyboard */,
@@ -126,6 +128,23 @@
 				0AE438D525193ADC00EFC694 /* Info.plist */,
 			);
 			path = InterviewUITests;
+			sourceTree = "<group>";
+		};
+		0AE438E725193B0800EFC694 /* Index */ = {
+			isa = PBXGroup;
+			children = (
+				0AE438EB25193B4000EFC694 /* ListingIndexDataSource.swift */,
+				0AE438EC25193B4000EFC694 /* ListingIndexViewController.swift */,
+			);
+			path = Index;
+			sourceTree = "<group>";
+		};
+		0AE438F225193B4700EFC694 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0AE438F325193B5E00EFC694 /* reverb-gear-index.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AE438BE25193ADC00EFC694 /* LaunchScreen.storyboard in Resources */,
+				0AE438F425193B5E00EFC694 /* reverb-gear-index.json in Resources */,
 				0AE438BB25193ADC00EFC694 /* Assets.xcassets in Resources */,
 				0AE438B925193ADB00EFC694 /* Main.storyboard in Resources */,
 			);
@@ -258,9 +278,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AE438B625193ADB00EFC694 /* ViewController.swift in Sources */,
+				0AE438ED25193B4000EFC694 /* ListingIndexDataSource.swift in Sources */,
+				0AE438EE25193B4000EFC694 /* ListingIndexViewController.swift in Sources */,
 				0AE438B225193ADB00EFC694 /* AppDelegate.swift in Sources */,
-				0AE438B425193ADB00EFC694 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
