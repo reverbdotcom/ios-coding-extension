@@ -1,13 +1,6 @@
-//
-//  AppDelegate.swift
-//  Interview
-//
-//  Created by Kevin Donnelly on 9/21/20.
-//
-
 import UIKit
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
