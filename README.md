@@ -4,7 +4,7 @@ These code extensions are designed so that we can code together during an ~~on-s
 
 ## Instructions
 1. We'll use your machine to drive. Ensure you are ready to go by having anything installed beforehand and that the project can run as-is. If you don't have access to a computer, **let us know** and we'll arrange an alternative setup.
-1. Familiarize yourself with the problem or the code.
+1. Familiarize yourself with the code.
 1. That's it! We'll give you all other information during the coding session.
 
 ## Tips & Setup
