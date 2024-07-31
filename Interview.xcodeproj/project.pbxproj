@@ -16,6 +16,7 @@
 		0AE438ED25193B4000EFC694 /* ListingIndexDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE438EB25193B4000EFC694 /* ListingIndexDataSource.swift */; };
 		0AE438EE25193B4000EFC694 /* ListingIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE438EC25193B4000EFC694 /* ListingIndexViewController.swift */; };
 		0AE438F425193B5E00EFC694 /* reverb-gear-index.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AE438F325193B5E00EFC694 /* reverb-gear-index.json */; };
+		F16A14FE2C5AD03D006B269A /* ListingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A14FD2C5AD03D006B269A /* ListingDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		0AE438EB25193B4000EFC694 /* ListingIndexDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingIndexDataSource.swift; sourceTree = "<group>"; };
 		0AE438EC25193B4000EFC694 /* ListingIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingIndexViewController.swift; sourceTree = "<group>"; };
 		0AE438F325193B5E00EFC694 /* reverb-gear-index.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "reverb-gear-index.json"; sourceTree = "<group>"; };
+		F16A14FD2C5AD03D006B269A /* ListingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				0AE438F225193B4700EFC694 /* Data */,
 				0AE438E725193B0800EFC694 /* Index */,
+				F16A14FC2C5AD027006B269A /* Detail */,
 				0AE438B125193ADB00EFC694 /* AppDelegate.swift */,
 				0AE438B725193ADB00EFC694 /* Main.storyboard */,
 				0AE438BA25193ADC00EFC694 /* Assets.xcassets */,
@@ -145,6 +148,14 @@
 				0AE438F325193B5E00EFC694 /* reverb-gear-index.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		F16A14FC2C5AD027006B269A /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F16A14FD2C5AD03D006B269A /* ListingDetailView.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +291,7 @@
 			files = (
 				0AE438ED25193B4000EFC694 /* ListingIndexDataSource.swift in Sources */,
 				0AE438EE25193B4000EFC694 /* ListingIndexViewController.swift in Sources */,
+				F16A14FE2C5AD03D006B269A /* ListingDetailView.swift in Sources */,
 				0AE438B225193ADB00EFC694 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -441,7 +453,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -459,7 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Interview/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,7 +491,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Interview/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,7 +511,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCDJ389U9P;
 				INFOPLIST_FILE = InterviewTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,7 +533,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCDJ389U9P;
 				INFOPLIST_FILE = InterviewTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -28,7 +28,7 @@ extension ListingIndexDataSource: UITableViewDataSource {
     
     let relatedItem = products[indexPath.item]
     
-    cell.textLabel?.text = relatedItem["title"] as! String
+    cell.textLabel?.text = relatedItem["title"] as? String
     cell.textLabel?.numberOfLines = 2
     
     return cell
