@@ -109,7 +109,6 @@
 		0AE438B025193ADB00EFC694 /* Interview */ = {
 			isa = PBXGroup;
 			children = (
-				0AE438F225193B4700EFC694 /* Data */,
 				0AE438E725193B0800EFC694 /* Index */,
 				F16A14FC2C5AD027006B269A /* Detail */,
 				5C51DAEC30083025009F28A6 /* Networking */,
@@ -145,16 +144,9 @@
 			children = (
 				0AE438EB25193B4000EFC694 /* ListingIndexDataSource.swift */,
 				0AE438EC25193B4000EFC694 /* ListingIndexViewController.swift */,
-			);
-			path = Index;
-			sourceTree = "<group>";
-		};
-		0AE438F225193B4700EFC694 /* Data */ = {
-			isa = PBXGroup;
-			children = (
 				0AE438F325193B5E00EFC694 /* reverb-gear-index.json */,
 			);
-			path = Data;
+			path = Index;
 			sourceTree = "<group>";
 		};
 		5C51DAEC30083025009F28A6 /* Networking */ = {
