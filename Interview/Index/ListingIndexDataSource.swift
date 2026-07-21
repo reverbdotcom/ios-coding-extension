@@ -24,8 +24,6 @@ extension ListingIndexDataSource: UITableViewDataSource {
       cell = UITableViewCell(style: .default, reuseIdentifier: "ProductCell")
     }
     
-    cell.imageView?.image = nil
-    
     let relatedItem = products[indexPath.item]
     
     cell.textLabel?.text = relatedItem["title"] as? String

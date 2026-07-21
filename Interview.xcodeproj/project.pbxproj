@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,9 @@
 		0AE438ED25193B4000EFC694 /* ListingIndexDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE438EB25193B4000EFC694 /* ListingIndexDataSource.swift */; };
 		0AE438EE25193B4000EFC694 /* ListingIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE438EC25193B4000EFC694 /* ListingIndexViewController.swift */; };
 		0AE438F425193B5E00EFC694 /* reverb-gear-index.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AE438F325193B5E00EFC694 /* reverb-gear-index.json */; };
+		5C51DAED30083025009F28A6 /* GraphQLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C51DAE930083025009F28A6 /* GraphQLClient.swift */; };
+		5C51DAEE30083025009F28A6 /* ListingsSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C51DAEA30083025009F28A6 /* ListingsSearchRequest.swift */; };
+		5C51DAEF30083025009F28A6 /* ListingsSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C51DAEB30083025009F28A6 /* ListingsSearchResponse.swift */; };
 		F16A14FE2C5AD03D006B269A /* ListingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A14FD2C5AD03D006B269A /* ListingDetailView.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +55,9 @@
 		0AE438EB25193B4000EFC694 /* ListingIndexDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingIndexDataSource.swift; sourceTree = "<group>"; };
 		0AE438EC25193B4000EFC694 /* ListingIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingIndexViewController.swift; sourceTree = "<group>"; };
 		0AE438F325193B5E00EFC694 /* reverb-gear-index.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "reverb-gear-index.json"; sourceTree = "<group>"; };
+		5C51DAE930083025009F28A6 /* GraphQLClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLClient.swift; sourceTree = "<group>"; };
+		5C51DAEA30083025009F28A6 /* ListingsSearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsSearchRequest.swift; sourceTree = "<group>"; };
+		5C51DAEB30083025009F28A6 /* ListingsSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsSearchResponse.swift; sourceTree = "<group>"; };
 		F16A14FD2C5AD03D006B269A /* ListingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,9 +109,9 @@
 		0AE438B025193ADB00EFC694 /* Interview */ = {
 			isa = PBXGroup;
 			children = (
-				0AE438F225193B4700EFC694 /* Data */,
 				0AE438E725193B0800EFC694 /* Index */,
 				F16A14FC2C5AD027006B269A /* Detail */,
+				5C51DAEC30083025009F28A6 /* Networking */,
 				0AE438B125193ADB00EFC694 /* AppDelegate.swift */,
 				0AE438B725193ADB00EFC694 /* Main.storyboard */,
 				0AE438BA25193ADC00EFC694 /* Assets.xcassets */,
@@ -138,16 +144,19 @@
 			children = (
 				0AE438EB25193B4000EFC694 /* ListingIndexDataSource.swift */,
 				0AE438EC25193B4000EFC694 /* ListingIndexViewController.swift */,
+				0AE438F325193B5E00EFC694 /* reverb-gear-index.json */,
 			);
 			path = Index;
 			sourceTree = "<group>";
 		};
-		0AE438F225193B4700EFC694 /* Data */ = {
+		5C51DAEC30083025009F28A6 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				0AE438F325193B5E00EFC694 /* reverb-gear-index.json */,
+				5C51DAE930083025009F28A6 /* GraphQLClient.swift */,
+				5C51DAEA30083025009F28A6 /* ListingsSearchRequest.swift */,
+				5C51DAEB30083025009F28A6 /* ListingsSearchResponse.swift */,
 			);
-			path = Data;
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		F16A14FC2C5AD027006B269A /* Detail */ = {
@@ -220,8 +229,9 @@
 		0AE438A625193ADB00EFC694 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1200;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 2650;
 				TargetAttributes = {
 					0AE438AD25193ADB00EFC694 = {
 						CreatedOnToolsVersion = 12.0;
@@ -290,6 +300,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AE438ED25193B4000EFC694 /* ListingIndexDataSource.swift in Sources */,
+				5C51DAED30083025009F28A6 /* GraphQLClient.swift in Sources */,
+				5C51DAEE30083025009F28A6 /* ListingsSearchRequest.swift in Sources */,
+				5C51DAEF30083025009F28A6 /* ListingsSearchResponse.swift in Sources */,
 				0AE438EE25193B4000EFC694 /* ListingIndexViewController.swift in Sources */,
 				F16A14FE2C5AD03D006B269A /* ListingDetailView.swift in Sources */,
 				0AE438B225193ADB00EFC694 /* AppDelegate.swift in Sources */,
@@ -384,6 +397,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -403,6 +417,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -445,6 +460,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -457,6 +473,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -506,7 +523,6 @@
 		0AE438DC25193ADC00EFC694 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCDJ389U9P;
@@ -528,7 +544,6 @@
 		0AE438DD25193ADC00EFC694 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCDJ389U9P;
@@ -550,7 +565,6 @@
 		0AE438DF25193ADC00EFC694 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCDJ389U9P;
 				INFOPLIST_FILE = InterviewUITests/Info.plist;
@@ -570,7 +584,6 @@
 		0AE438E025193ADC00EFC694 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCDJ389U9P;
 				INFOPLIST_FILE = InterviewUITests/Info.plist;
