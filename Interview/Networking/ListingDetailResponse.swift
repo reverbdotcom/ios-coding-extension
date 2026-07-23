@@ -1,8 +1,8 @@
 import Foundation
 
-/// Represents the JSON response of a ``ListingsDetailRequest``.
+/// Represents the JSON response of a ``ListingDetailRequest``.
 
-struct ListingsDetailResponse: Decodable {
+struct ListingDetailResponse: Decodable {
     let data: ResponseData
 
     struct ResponseData: Decodable {

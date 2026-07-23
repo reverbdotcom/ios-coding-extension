@@ -1,7 +1,7 @@
 import Foundation
 
 /// Represents a GraphQL Request for a listing detail page.
-struct ListingsDetailRequest: Encodable {
+struct ListingDetailRequest: Encodable {
     /// Initializes a listings search request with a listing id
     init(listingID: String) {
         self.variables = ["id": listingID]
@@ -11,7 +11,7 @@ struct ListingsDetailRequest: Encodable {
     let operationName = String(describing: Self.self)
 
     let query: String = """
-      query ListingsDetailRequest($id: String) {
+      query ListingDetailRequest($id: String) {
         listing(input: {id: $id}) {
           id
           title
